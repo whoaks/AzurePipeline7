@@ -107,8 +107,8 @@
                     ]
                 }
             }
-        }
-       /* {
+        },
+        {
             "type"      : "Microsoft.Network/virtualNetworks/subnets",
             "apiVersion": "2020-05-01",
             "location"  : "[resourceGroup().location]",
@@ -120,8 +120,8 @@
                 "addressPrefix"                 : "[parameters('Subnet_Address')]",
                 "privateEndpointNetworkPolicies": "[parameters('Subnet_PE_Network_Policy')]"
             }
-        },
-        {
+        }
+       /* {
             "name"      : "[parameters('Storage_Account_Name')]",
             "type"      : "Microsoft.Storage/storageAccounts",
             "apiVersion": "2019-06-01",
