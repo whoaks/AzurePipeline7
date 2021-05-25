@@ -143,7 +143,7 @@
                 }
             },
             "tags": "[parameters('Storage_Account_Tags')]"
-        } /*,
+        },
         {
             "name"      : "[concat(parameters('Storage_Account_Name') , '/default/', parameters('Storage_Container_Name')[copyIndex('ContainerCopy')])]",
             "type"      : "Microsoft.Storage/storageAccounts/blobServices/containers",
@@ -159,7 +159,7 @@
                 "count": "[length(parameters('Storage_Container_Name'))]",
                 "mode" : "Serial"
             }
-        },
+        }/*,
         {
             "type"      : "Microsoft.Network/privateDnsZones",
             "apiVersion": "2020-06-01",
