@@ -13,10 +13,10 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope               : 'Resource Group'
-    azureResourceManagerConnection: 'aksarmsp8'
+    azureResourceManagerConnection: 'aksarmsp9'
     subscriptionId                : 3280ff72-14fc-46dd-809e-ccee75183a87
     action                        : 'Create Or Update Resource Group'
-    resourceGroupName             : 'Aks-RG'
+    resourceGroupName             : 'Aks-RG2'
     location                      : 'East US'
     templateLocation              : 'URL of the file'
     csmFileLink                   : 'https://raw.githubusercontent.com/whoaks/AzurePipeline7/main/Template/PE_SA.json'
