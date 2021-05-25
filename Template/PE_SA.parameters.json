@@ -1,0 +1,106 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "VNet_Name": {
+            "value" : "VNet-1"
+        },
+        "VNet_Address": {
+            "value" : "10.10.0.0/16"
+        },
+        "VNet_Tags": {
+            "value": {
+                "Env" : "Testing"
+            }
+        },
+        "Subnet_Name": {
+            "value" : "Subnet-1" 
+        },
+        "Subnet_Address": {
+            "value" : "10.10.0.0/24"  
+        },
+        "Subnet_PE_Network_Policy": {
+            "value": "Disabled" 
+        },
+        "Storage_Account_Name": {
+            "value": "staccount7384"
+        },
+        "Storage_Account_Kind": {
+            "value": "StorageV2"
+        },
+        "Storage_Account_SKU_Name": {
+            "value": "Standard_ZRS"
+        },
+        "Storage_Account_SKU_Tier": {
+            "value": "Standard"
+        },
+        "Storage_Account_Access_Tier": {
+            "value": "Hot"
+        },
+        "Storage_Account_Blob_Access": {
+            "value": true
+        },
+        "Storage_Account_HNS": {
+            "value": false
+        },
+        "Storage_Account_TLS_Version": {
+            "value": "TLS1_2"
+        },
+        "Storage_Account_Https_Traffic": {
+            "value": true
+        },
+        "Storage_Account_Tags": {
+            "value": {
+                "Env": "Testing"
+            }
+        },
+        "Storage_Account_Network_Bypass": {
+            "value": "AzureServices"
+        },
+        "Storage_Account_Network_Action": {
+            "value": "Deny"
+        },
+        "Storage_Container_Name": {
+            "value": ["con-1"]
+        },
+        "Storage_Container_Access": {
+            "value": ["Container"]
+        },
+        "Private_DNS_Name": {
+            "value": ["privatelink.blob.core.windows.net"]
+        },
+        "Private_DNS_Tags":{
+            "value": {
+                "Env": "Testing"
+            }
+        },
+        "Private_DNS_VNet_Name": {
+            "value": ["dns-blob-vnet"]
+        },
+        "Private_DNS_VNet_Registration": {
+            "value": [false]
+        },
+        "Private_DNS_VNet_Tags":{
+            "value": {
+                "Env": "Testing"
+            }
+        },
+        "PE_Name": {
+            "value": ["pe-storage-blob"]
+        },
+        "PE_Tags": {
+            "value": {
+                "Env": "Testing"
+            }
+        },
+        "PE_Service_Name": {
+            "value": ["pe-storage-blob-connection"]
+        },
+        "PE_SubResource_Name": {
+            "value": ["blob"]
+        },
+        "PE_DNS_Zone_Config_Name": {
+            "value": ["arm-config"]
+        }
+    }
+}
