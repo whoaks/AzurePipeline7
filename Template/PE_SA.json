@@ -193,7 +193,7 @@
                 "count": "[length(parameters('Private_DNS_VNet_Name'))]",
                 "mode" : "Serial"
             }
-        }/*,
+        },
         {
             "name"      : "[parameters('PE_Name')[copyIndex('PECopy')]]",
             "type"      : "Microsoft.Network/privateEndpoints",
@@ -248,6 +248,6 @@
                 "count": "[length(parameters('PE_DNS_Zone_Config_Name'))]",
                 "mode" : "Serial"
             }
-        } */
+        } 
     ]
 }
