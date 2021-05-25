@@ -159,7 +159,7 @@
                 "count": "[length(parameters('Storage_Container_Name'))]",
                 "mode" : "Serial"
             }
-        }/*,
+        },
         {
             "type"      : "Microsoft.Network/privateDnsZones",
             "apiVersion": "2020-06-01",
@@ -193,7 +193,7 @@
                 "count": "[length(parameters('Private_DNS_VNet_Name'))]",
                 "mode" : "Serial"
             }
-        },
+        }/*,
         {
             "name"      : "[parameters('PE_Name')[copyIndex('PECopy')]]",
             "type"      : "Microsoft.Network/privateEndpoints",
